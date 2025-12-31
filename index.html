@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FundsFlow Status</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Overall Status Box */
+        .overall-status {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .overall-status .emoji {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            font-size: 1.1em;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #333;
+            color: white;
+        }
+
+        td.emoji {
+            font-size: 1.6em;
+            text-align: center;
+            width: 80px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Legend */
+        .legend-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .legend-emoji {
+            font-size: 1.8em;
+            width: 60px;
+            text-align: center;
+        }
+
+        .legend-text h3 {
+            margin: 0;
+        }
+
+        .legend-text p {
+            margin: 2px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FundsFlow Status</h1>
+    <p>System-wide service overview</p>
+</header>
+
+<!-- ⭐ OVERALL STATUS ⭐ -->
+<div class="overall-status">
+    <div class="emoji">🟢⚪️</div>
+    <h2>Overall Status: Great News - The website is back online and working!</h2>
+    <p>Update & Hotfix being published soon! </p>
+</div>
+
+<!-- ⭐ STATUS TABLE ⭐ -->
+<table>
+    <thead>
+        <tr>
+            <th>System</th>
+            <th>Status</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Main systems</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>System found and working.</td>
+        </tr>
+
+        <tr>
+            <td>Server</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>System found and working.</td>
+        </tr>
+
+        <tr>
+            <td>Backup systems</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>System found and working.</td>
+        </tr>
+
+        <tr>
+            <td>Website</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>Website found (new created with supplier), System found and working.</td>
+        </tr>
+
+        <tr>
+            <td>Login</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>System found and working.</td>
+        </tr>
+
+        <tr></tr>
+
+        <tr>
+            <td>Points system</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>Everything working perfectly.</td>
+        </tr>
+
+        <tr>
+            <td>Logs & Recordings</td>
+            <td class="emoji">🟡⚪️</td>
+            <td>Issues affecting log/recording availability, system found successfully. </td>
+        </tr>
+
+        <tr>
+            <td>Design</td>
+            <td class="emoji">🟢⚪️</td>
+            <td>Minor design issues being worked on, current design system found and working..</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ⭐ STATUS MEANING ⭐ -->
+<div class="legend-container">
+    <h2>Status Meanings</h2>
+
+    <div class="legend-item">
+        <div class="legend-emoji">🟢</div>
+        <div class="legend-text">
+            <h3>Green — Everything working perfectly</h3>
+            <p><strong>Action:</strong> None</p>
+        </div>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-emoji">⚪️</div>
+        <div class="legend-text">
+            <h3>White — Update shortly expected (new version)</h3>
+            <p><strong>Action:</strong> None</p>
+        </div>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-emoji">🟡</div>
+        <div class="legend-text">
+            <h3>Yellow — Minor issues</h3>
+            <p><strong>Action:</strong> Monitor if needed</p>
+        </div>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-emoji">🟠</div>
+        <div class="legend-text">
+            <h3>Orange — Issues affecting system</h3>
+            <p><strong>Action:</strong> Report to James</p>
+        </div>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-emoji">🔴</div>
+        <div class="legend-text">
+            <h3>Red — System down</h3>
+            <p><strong>Action:</strong> Report to James</p>
+        </div>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-emoji">⚫️</div>
+        <div class="legend-text">
+            <h3>Black — System not found</h3>
+            <p><strong>Action:</strong> Report to James</p>
+        </div>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-emoji">⚠️</div>
+        <div class="legend-text">
+            <h3>Unknown — Undetected issues</h3>
+            <p><strong>Action:</strong> Report to James immediately</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
